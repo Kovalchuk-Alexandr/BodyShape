@@ -1,0 +1,32 @@
+.footer {
+    padding-block: 70px;
+    height: 250px;
+}
+
+.footer-socials {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contacts {
+    display: flex;
+    gap: 50px;
+    max-width: 585px;
+
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+    color: #fafaf5;
+}
+.footer-contacts-col {
+    display: grid;
+}

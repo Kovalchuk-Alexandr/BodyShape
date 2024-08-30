@@ -8,6 +8,7 @@
 @import './base/reset.css';
 @import './base/vars.css';
 @import './base/base.css';
+@import './base/icons.css';
 @import './base/button.css';
 @import './base/mobile-nav-button.css';
 @import './base/mobile-nav.css';
@@ -21,13 +22,9 @@
 @import './blocks/card-group.css';
 @import './blocks/contacts.css';
 @import './blocks/form.css';
+@import './blocks/footer.css';
 
 @import './blocks/nav.css';
-@import './blocks/header-content.css';
-@import './blocks/form.css';
-@import './blocks/card.css';
-@import './blocks/about.css';
-@import './blocks/footer.css';
 
 /* =============  Media ================= */
 @import './base/media.css';

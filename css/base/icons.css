@@ -1,0 +1,14 @@
+.socials-icon {
+    fill: var(--accent);
+    /* stroke: var(--accent); */
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in;
+    
+}
+
+.socials-icon:hover {
+    fill: #ebc169;
+
+    transform: scale(1.15);
+}
