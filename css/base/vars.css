@@ -1,0 +1,17 @@
+:root {
+    --text-color: #FAFAF5;
+    --text-alter: var(--white);
+    --text-muted: #8D8D8D;
+    --text-card-darkblue: #0D1B39;
+    
+    --accent: #FFD479;
+    --header-text-color: #fff;
+
+    --bg-color: #1F2A32;
+
+    --font-family: "Bebas Neue", sans-serif;
+    --second-family: "Roboto", sans-serif;
+
+
+    --white: #fff;
+}

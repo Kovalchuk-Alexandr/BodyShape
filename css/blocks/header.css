@@ -1,0 +1,80 @@
+.header {
+    height: 720px;
+
+    background-image: image-set(
+        url("./../../img/header/hero-bg.jpg") 1x,
+        url("./../../img/header/hero-bg@2x.jpg") 2x);
+    
+    background-position: left center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Для ретины */
+/* @media screen and (min-resolution: 192dpi){
+    .header {
+        background-image: url("./../../img/header/hero-bg@2x.jpg");
+    }
+} */
+
+.header-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-logo {
+}
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-item {
+}
+
+.header-link {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.19em;
+    transition: all 0.3s ease-in;
+}
+
+.header-link:hover {
+    opacity: 0.8;
+}
+
+.header-link::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+
+    height: 1.5px;
+
+    background-color: transparent;
+    transform: scaleX(0) ;
+    transform-origin: center;
+    transition: all 0.3s ease-in;
+}
+
+.header-link:hover::before {
+    background-color: var(--white);
+    right: 0;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-img {
+    padding-top: 125px;
+    text-align: right;
+}

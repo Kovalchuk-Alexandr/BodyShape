@@ -1,0 +1,40 @@
+.card-group {
+    position: relative;
+    display: grid;
+    gap: 25px;
+    border: 0px solid #979797;
+    border-radius: 20px;
+    width: 268px;
+    height: 250px;
+}
+
+.card-group-img {
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.card-group-link {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/* делаем/растягиваем ссылку на всю карточку*/
+.card-group-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-group:hover .card-group-img {
+    transform: scale(1.03);
+
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.15);
+}

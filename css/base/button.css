@@ -1,0 +1,25 @@
+.button {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 7px;
+    width: 214px;
+    height: 52px;
+
+    background-color: #ffd479;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.26em;
+    color: #000;
+    transition: background-color 0.3s ease-in, outline 0.3s ease-in;
+}
+
+.button:hover, .button:active   { 
+    /* opacity: 0.85; */
+    background-color: #ebc169;
+    outline: 2px solid #d89a15;
+}
