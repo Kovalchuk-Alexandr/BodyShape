@@ -18,7 +18,7 @@
 } */
 
 .header-row {
-    margin-top: 30px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,4 +77,68 @@
 .header-img {
     padding-top: 125px;
     text-align: right;
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 500px;
+
+        background-image: image-set(
+        url("./../../img/header/hero-bg-m.jpg") 1x,
+        url("./../../img/header/hero-bg-m@2x.jpg") 2x);
+    }
+
+    .header-row {
+        padding-top: 20px;
+    }
+
+    .header-logo {
+        width: 130px;
+        height: auto;
+    }
+
+    .header-list {
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .header-img {
+        padding-top: 90px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        height: 500px;
+
+        background-image: image-set(
+        url("./../../img/header/hero-bg-s.jpg") 1x,
+        url("./../../img/header/hero-bg-s@2x.jpg") 2x);
+    }
+
+    .header-row {
+        padding-top: 40px;
+        justify-content: center;
+      }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-img {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header-list {
+        display: none;
+    }
+    .header-row {
+        justify-content: space-between;
+    }
+    .header-logo {
+        display: block;
+    }
 }

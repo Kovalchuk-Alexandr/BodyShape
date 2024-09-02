@@ -10,25 +10,66 @@
     <header class="header ">
         <div class="container">
             <nav class="header-row">
-                <img src="./img/header/logo.png" srcset="./img/header/logo@2x 2x.png" alt="Logo icon" class="header-logo" width="183" height="81">
+                <img src="./img/header/logo.png" srcset="./img/header/logo@2x 2x.png" class="header-logo" width="183" height="81" alt="Logo icon" >
 
                 <ul class="header-list">
                     <li class="header-item"><a href="#!" class="header-link">Инструкторы</a></li>
                     <li class="header-item"><a href="#!" class="header-link">Секции</a></li>
                     <li class="header-item"><a href="#!" class="header-link">Новости</a></li>
                     <li class="header-item"><a href="#!" class="header-link">Контакты</a></li>
-                </ul>                
+                </ul>
+                
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon">
+                        <img class="nav-img" src="./img/icons/menu_right.svg" alt="Menu button">
+                    </div>
+                </button>
+
             </nav>
 
             <div class="header-img">
-                <img src="./img/header/hero-logo.png" srcset="./img/header/hero-logo@2x 2x.png" alt="Logo Big" width="526" height="332">
+                <!-- <img src="./img/header/hero-logo.png" srcset="./img/header/hero-logo@2x 2x.png" alt="Logo Big" width="526" height="332"> -->
+
+                <img
+                    srcset='
+                        ./img/header/hero-logo-m.png 240w,
+                        ./img/header/hero-logo.png 332w'
+                    sizes='
+                        (max-width: 767px) 240px,
+                                           332px,'
+                    src='./img/header/hero-logo.png' alt='Logo Big'
+                />
+                
             </div>
         </div>
     </header>
 
+    <!-- ======= Мобильная навигация  ============================ -->
+    <div class="mobile-nav ">
+        <button class="mobile-close-btn">
+            <!-- <img src="./img/icons/close_round.svg" alt="Close button"> -->
+            <svg class="socials-icon icon-close" width="24" height="24" >
+                <use href="./img/icons/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">Инструкторы</a></li>
+            <li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">Секции</a></li>
+            <li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">Новости</a></li>
+            <li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">Контакты</a></li>
+        </ul>
+
+        <img src="./img/header/logo.png" srcset="./img/header/logo@2x 2x.png" class="mobile-nav-logo" width="183" height="81" alt="Logo icon" >
+    </div>
+
+    <!-- ======= Fade для мобильной навигации  =================== -->
+	<div class="mobile-nav-fade"></div>
+
+
     <main>
         <!-- =============== Section Trainers  ===================================== -->
-        <section class="section section-trainers ">
+        <section class="section section-trainers none">
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title">ПЕРСОНАЛЬНЫЕ ТРЕНЕРЫ</h2>
@@ -43,49 +84,49 @@
                     <!-- =============== CARD 01  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">VINCENZO GRAHAM</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-01.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-01.jpg" srcset="./img/trainers/card-01@2x.jpg 2x" alt="card 01">
                     </a>
 
                     <!-- =============== CARD 02  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">claudia mori</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-02.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-02.jpg" srcset="./img/trainers/card-02@2x.jpg 2x"  alt="card 02">
                     </a>
 
                     <!-- =============== CARD 03  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">mark wolberg</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-03.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-03.jpg" srcset="./img/trainers/card-03@2x.jpg 2x"  alt="card 03">
                     </a>
 
                     <!-- =============== CARD 04  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">tinto punto</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-04.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-04.jpg" srcset="./img/trainers/card-04@2x.jpg 2x" alt="card 04">
                     </a>
 
                     <!-- =============== CARD 05  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">dark angel</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-05.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-05.jpg" srcset="./img/trainers/card-05@2x.jpg 2x" alt="card 05">
                     </a>
 
                     <!-- =============== CARD 06  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">mila notty</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-06.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-06.jpg" srcset="./img/trainers/card-01@2x.jpg 2x" alt="card 06">
                     </a>
 
                     <!-- =============== CARD 07  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">sara bernar</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-07.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-07.jpg" srcset="./img/trainers/card-01@2x.jpg 2x" alt="card 07">
                     </a>
 
                     <!-- =============== CARD 08  ========================== -->
                     <a href="#!" class="card-trainer">
                         <div class="card-trainer-name">mia lean</div>
-                        <img class="card-trainer-img" src="./img/trainers/card-08.jpg" alt="card 01">
+                        <img class="card-trainer-img" src="./img/trainers/card-08.jpg" srcset="./img/trainers/card-01@2x.jpg 2x" alt="card 08">
                     </a>
 
                 </div>
@@ -93,7 +134,7 @@
         </section>
 
         <!-- =============== Section Beast  mode  ================================== -->
-        <section class="section-beast ">
+        <section class="section-beast none">
             <div class="container">
                 <div class="section-beast-title">РЕЖИМ ЗВЕРЯ</div>
 
@@ -108,7 +149,7 @@
         </section>
 
         <!-- =============== Section Programs & Sections  ========================== -->
-        <section class="section section-groups ">
+        <section class="section section-groups none">
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title">ПРОГРАММЫ <br>И СЕКЦИИ</h2>
@@ -171,7 +212,7 @@
         </section>
         
         <!-- =============== Cotacts  ============================================== -->
-        <section class="contacts">
+        <section class="contacts none">
             <div class="container">
                 <div class="contacts-content">
                     <h2 class="contacts-title">НАПИСАТЬ НАМ</h2>
@@ -263,10 +304,10 @@
             </ul>
             <div class="footer-contacts">
                 <div class="footer-contacts-col">
-                    <p>
+                    <address>
                         г.Славноград, ул.Абрикосовая, д.5 <br>
                         Рай, 123005
-                    </p>
+                    </address>
                 </div>
 
                 <div class="footer-contacts-col">
@@ -277,5 +318,6 @@
         </div>
      </footer>
     
+     <script src="./js/index.js"></script>
 </body>
 </html>

@@ -21,5 +21,7 @@
 .button:hover, .button:active   { 
     /* opacity: 0.85; */
     background-color: #ebc169;
-    outline: 2px solid #d89a15;
+    /* outline: 2px solid #d89a15; */
+    box-shadow: inset 0px 0px 3px #868686;
+
 }
