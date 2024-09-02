@@ -1,8 +1,10 @@
 .card-trainer {
     position: relative;
     border-radius: 20px;
-    width: 268px;
+    aspect-ratio: 268/400;
+    /* width: 268px; */
     height: 400px;
+    
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
 
     object-fit: cover;
@@ -55,3 +57,11 @@
 .card-trainer-img {
 
 }
+
+@media (max-width: 1200px) {
+    .card-trainer {
+        max-height: 400px;
+        height: 100%;
+    }
+}
+
