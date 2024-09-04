@@ -5,5 +5,6 @@
 - HTML,
 - CSS, переменные,
 - CSS Grid,
+- Мобильная навигация/Адаптация
 
 [Смотреть демо](https://kovalchuk-alexandr.github.io/BodyShape/)
