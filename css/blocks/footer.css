@@ -1,11 +1,18 @@
 .footer {
     padding-block: 70px;
-    height: 250px;
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .footer-socials {
-    margin-bottom: 30px;
-
     display: flex;
     align-items: center;
     gap: 50px;
@@ -18,9 +25,8 @@
 
 .footer-contacts {
     display: flex;
-    gap: 50px;
+    gap: 16px 50px;
     max-width: 585px;
-
     font-family: var(--second-family);
     font-weight: 300;
     font-size: 14px;
@@ -29,4 +35,26 @@
 }
 .footer-contacts-col {
     display: grid;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding-block: 40px;
+        vertical-align: baseline;
+    }
+
+    .footer-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-contacts {
+        flex-direction: column;
+    }
+
+    .footer-socials {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
 }

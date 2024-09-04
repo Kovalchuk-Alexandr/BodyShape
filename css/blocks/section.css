@@ -53,6 +53,9 @@
     .section {
         padding-block: 80px;
     }
+    .section-groups-grid {
+        gap: 60px 30px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -77,6 +80,13 @@
     .section-trainers-grid {
         display: flex;
         gap: 35px 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .section-groups-grid {
+        display: flex;
+        gap: 20px 30px;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }

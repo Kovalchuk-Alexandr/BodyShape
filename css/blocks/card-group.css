@@ -1,16 +1,28 @@
 .card-group {
     position: relative;
-    display: grid;
-    gap: 25px;
+    /* display: flex; */
+    /* gap: 25px; */
+    aspect-ratio: 268/360;
+    /* width: 268px; */
+    height: 360px;
     border: 0px solid #979797;
-    border-radius: 20px;
-    width: 268px;
-    height: 250px;
+    /* border-radius: 20px; */
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
 }
 
 .card-group-img {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
     border-radius: 20px;
+
+    transform-origin: center;
     transition: all 0.3s ease-in;
+
+    margin-bottom: 25px;
 }
 
 .card-group-link {
@@ -34,7 +46,38 @@
 }
 
 .card-group:hover .card-group-img {
-    transform: scale(1.03);
+    transform: scale(.96);
 
     box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1200px) {
+    .card-group {
+        max-height: 360px;
+        height: 100%;
+
+        /* max-width: 268px;
+        width: 100%; */
+    }
+}
+
+@media (max-width: 1130px) {
+    .card-group-link {
+        font-size: 32px;
+        letter-spacing: 0.07em;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-group-link {
+        font-size: 28px;
+        letter-spacing: 0.07em;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-group-link {
+        display: block;
+        text-align: center;
+    }
 }

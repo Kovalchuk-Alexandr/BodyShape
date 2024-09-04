@@ -26,3 +26,24 @@
     letter-spacing: 0.06em;
     color: var(--accent);
 }
+
+@media (max-width: 767px) {
+    .contacts {
+        background-image: image-set(
+            url("./../../img/contacts/contacts-bg-767w.jpg") 1x,
+            url("./../../img/contacts/contacts-bg-767w@2x.jpg") 2x);
+        }
+}
+
+@media (max-width: 500px) {
+    .contacts {height: 700px;}
+
+    .contacts-title {
+        text-align: center;
+        font-size: 48px;
+    }
+    .contact-btn{
+        display: flex;
+        justify-content: center;
+    }
+}
